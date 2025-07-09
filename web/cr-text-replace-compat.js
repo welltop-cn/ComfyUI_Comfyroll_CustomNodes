@@ -1,4 +1,4 @@
-import { app } from "../scripts/app.js";
+import {app} from '../../scripts/app.js'
 
 /**
  * CR Text Replace 兼容性扩展

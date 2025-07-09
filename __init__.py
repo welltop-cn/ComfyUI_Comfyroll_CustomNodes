@@ -19,6 +19,7 @@
 """
 
 from .node_mappings import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+WEB_DIRECTORY = "./web"
 
 print("------------------------------------------")    
 print("\033[34mComfyroll Studio v1.76 : \033[92m 175 Nodes Loaded\033[0m")

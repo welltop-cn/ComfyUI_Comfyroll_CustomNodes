@@ -248,6 +248,13 @@ class CR_TextReplace:
     def replace_text(self, text, find1="", replace1="", find2="", replace2="", find3="", replace3=""):
     
         show_help =  "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki/List-Nodes#cr-text-replace" 
+
+        if find1 == "" and replace1 != "":
+            print("[Warning] CR Text Replace: The find1 text is empty, but the replace1 text is not empty.")
+        if find2 == "" and replace2 != "":
+            print("[Warning] CR Text Replace: The find2 text is empty, but the replace2 text is not empty.")
+        if find3 == "" and replace3 != "":
+            print("[Warning] CR Text Replace: The find3 text is empty, but the replace3 text is not empty.")
         
         text = text.replace(find1, replace1)
         text = text.replace(find2, replace2)
